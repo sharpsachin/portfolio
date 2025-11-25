@@ -10,19 +10,22 @@
   margin: 40px;
   line-height: 1.6;
   padding-left: 30px;
-
-  background: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("tech2.jpg") no-repeat center center ;
-  filter: brightness(50px);
-  background-size: cover;   
-  animation: bounceBg 2s infinite;         
+  background-color: black;
+  background-image: url('cpu.png');
+  background-size: 400px auto;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  animation: bounceBackground 3s ease-in-out infinite;
+   }       
+  
+  @keyframes bounceBackground {
+    0%, 100% {
+      background-position: center 45%;
+    }
+    50% {
+      background-position: center 55%;
+    }
   }
-  @keyframes bounceBg {
-  0%   { background-position: center 0px; }
-  50%  { background-position: center 20px; }
-  100% { background-position: center 0px; }
-}
   nav{
     text-align: end;
     margin-left: 30px;
@@ -73,8 +76,11 @@ nav a:hover {
     {
       font-weight: 900 ;
        color: green;
-      margin-top: 0.%;
+      margin-top: 0;
       transition: all 0.3s ease;
+    }
+    #p{
+      color: white;
     }
     h1:hover, h2:hover
      { 
@@ -98,7 +104,7 @@ nav a:hover {
       animation: fadeIn 3s ease-out;
     }
 h5{
-  color: aliceblue;
+  color: white;
 }
    
     #Edu-MCA, #Edu-BCA {
@@ -115,32 +121,32 @@ h5{
       margin: 30px 0;
     }
     ul{
-      color: aliceblue;
+     
+        border-left: 4px solid #1a73e8;
+        color: white;
     }
 
     #ie
     {
        border-left: 4px solid #1a73e8;
     }
+  
   </style>
 
 </head>
 <body>
  <nav id="nav">
   <a href="#edu">Education Details |</a>
-   <a href="#ie">Intern Experience |</a>
+   <a href="#i">Intern Experience |</a>
     <a href="#skill">Skills |</a> 
-        <a href="#lang">Language</a>
+        <a href="#lang">Language |</a>
+         <a href="#lang">Contact</a>
  </nav>
   <section class="row">
     <img src="qps.jpg" alt="Sachin image"/>
     <div class="content">
       <h1>Sachithanantham N E </h1>
-      <ul>
-        <li>Kanchipuram</li>
-        <li>9025305459</li>
-        <li>sharpsachin22@gmail.com</li>
-      </ul>
+     <p id="p">Software Developer at QUADPROSOFT Technology</p>
     </div>
   </section>
 
@@ -157,7 +163,7 @@ h5{
 
   <hr>
 
-     <h2 id="#edu">Education Qualifications</h2>
+     <h2 id="edu">Education Qualifications</h2>
      <section id="Edu-MCA">
   
     <h4>Master of Computer Applications (MCA)</h4>
@@ -171,13 +177,13 @@ h5{
     2020-2023 | Percentage: 76%</h5>
   </section>
   <div >
-    <h2>Internship Experience<h2>
-      <h4>Fullstack developer intern at Vcodez company,sholinganallur,chennai,Tamilnadu-600119<br>
-     (june 2025 to september 2025)</h4>
+    <h2 id="i">Internship Experience</h2>
+      <h4>Fullstack developer intern at Vcodez company, Sholinganallur, Chennai, Tamil Nadu-600119<br>
+     (June 2025 to September 2025)</h4>
 <ul id="ie">
-  <li>Built a framework to calculate carban emission seperately for households and industries,ensuring higher accurancy than reginal averages</li>
-  <li>Implemented decision tree alogorith to improve precision over tradition reggression model</li>
-  <li>Delivered a scalable tool to support sustainablity stratergy and industrial responsiblity</li>
+  <li>Built a framework to calculate carbon emission separately for households and industries, ensuring higher accuracy than regional averages</li>
+  <li>Implemented decision tree algorithm to improve precision over traditional regression model</li>
+  <li>Delivered a scalable tool to support sustainability strategy and industrial responsibility</li>
 </ul>
   </div>
   <div id="skill">
@@ -195,6 +201,14 @@ h5{
     <ul>
       <li>Tamil</li>
       <li>English</li>
+    </ul>
+    </div>
+     <div id="con">
+    <h2>Contanct</h2>
+    <ul>
+      <li>9025305459</li>
+      <li>sharpsachin222@gmail.com</li>
+      <li>sharpsachin</li>
     </ul>
     </div>
 </body>
